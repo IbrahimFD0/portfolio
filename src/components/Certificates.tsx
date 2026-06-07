@@ -1,9 +1,4 @@
-import {
-  Award,
-  Calendar,
-  ExternalLink,
-  ShieldCheck,
-} from "lucide-react";
+import { Award, Calendar, ExternalLink, ShieldCheck } from "lucide-react";
 import React from "react";
 import { BiCertification } from "react-icons/bi";
 
