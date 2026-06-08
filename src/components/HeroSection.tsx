@@ -39,13 +39,12 @@ const HeroSection = () => {
               </h1>
             </div>
             <p className="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
-              mi pretium tellus duis convallis. Tempus leo eu aenean sed diam
-              urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum
-              egestas. Iaculis massa nisl malesuada lacinia integer nunc
-              posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
-              litora torquent per conubia nostra inceptos himenaeos.
+              Cybersecurity graduate and software developer passionate about
+              building secure, reliable, and impactful solutions. With
+              experience spanning cybersecurity, networking, systems
+              programming, and full-stack development, I enjoy tackling complex
+              technical challenges and turning ideas into practical
+              applications.
             </p>
             <div className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max lg:mx-0">
               <button className="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
