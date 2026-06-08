@@ -9,8 +9,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems: Array<IMenu> = [
     { name: "Education", href: "#education" },
-    { name: "About Me", href: "#about" },
     { name: "Experience", href: "#skills" },
+    { name: "About Me", href: "#about" },
     { name: "Projects", href: "#projects" },
   ];
   const scrollToSection = (href: string) => {
