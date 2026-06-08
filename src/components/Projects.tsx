@@ -1,5 +1,3 @@
-import { Section } from "lucide-react";
-import React from "react";
 import network from "../assets/network-project.png";
 import homelab from "../assets/homelab.png";
 import farysshop from "../assets/faryssyshop.png";

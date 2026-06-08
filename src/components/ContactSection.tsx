@@ -1,4 +1,3 @@
-import React from "react";
 import { FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 
