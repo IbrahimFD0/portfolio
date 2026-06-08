@@ -41,9 +41,9 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. In id cursus
-              mi pretium tellus duis convallis.
+              Whether you have an opportunity, a project idea, or simply want to
+              connect, I'd love to hear from you. Feel free to get in touch, and
+              I'll get back to you as soon as possible.
             </p>
             <div className="space-y-6">
               {contactInfo.map((info) => {
@@ -87,7 +87,7 @@ const ContactSection = () => {
             </div>
           </div>
           {/* Contact Form */}
-          <div className="bg-[#432257] rounded-lg p-6">
+          {/* <div className="bg-[#432257] rounded-lg p-6">
             <form>
               <div className="mb-4">
                 <label
@@ -136,7 +136,7 @@ const ContactSection = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
