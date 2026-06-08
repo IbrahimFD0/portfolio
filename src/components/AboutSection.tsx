@@ -9,21 +9,15 @@ const AboutSection = () => {
       >
         <div data-aos="fade-rigth">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-            More <span className="text-primary">About</span> Me
+            More <span className="text-primary">About</span> Me.
           </h2>
           <p className="text-gray-400 text-base lg:text-lg mb-10 leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
-            <br />
-            <br />
-            Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
-            fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
-            malesuada lacinia integer nunc posuere. Ut hendrerit semper vel
-            class aptent taciti sociosqu.
-            <br />
-            <br />
-            Ad litora torquent per conubia nostra inceptos himenaeos.
+            Cybersecurity graduate and software developer with a strong interest
+            in network security, systems programming, and web technologies. I
+            enjoy building practical solutions, exploring how systems work at a
+            low level, and applying technical knowledge to solve real-world
+            challenges. My work spans cybersecurity research, full-stack
+            development, networking, and Linux-based environments.
           </p>
           <div className="grid grid-cols-3 gap-6 max-w-xl">
             <div
@@ -34,13 +28,13 @@ const AboutSection = () => {
                 className="text-primary font-bold
                 text-2xl md:text-3xl"
               >
-                +200
+                +5
               </h3>
               <p
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
               "
               >
-                Clients
+                Spoken Languages
               </p>
             </div>{" "}
             <div
@@ -51,7 +45,7 @@ const AboutSection = () => {
                 className="text-primary font-bold
                 text-2xl md:text-3xl"
               >
-                +30
+                +10
               </h3>
               <p
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
@@ -68,13 +62,13 @@ const AboutSection = () => {
                 className="text-primary font-bold
                 text-2xl md:text-3xl"
               >
-                +7
+                +3
               </h3>
               <p
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
               "
               >
-                Years
+                Years of Experience
               </p>
             </div>
           </div>
