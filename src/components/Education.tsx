@@ -5,17 +5,25 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      degree: "Masters in CS",
+      degree: "Masters in Computer Science & CyberSecurity",
       institution: "Cy Tech",
       duration: "2022-2025",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing",
+      details:
+        "Specialized in Cybersecurity, Networking, Software Engineering, and Information Systems",
     },
     {
       id: 2,
-      degree: "Bachelors in CS",
+      degree: "Bachelors of Science",
       institution: "Gustave Eiffel",
       duration: "2020-2022",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing",
+      details: "Selected for a Competitive Engineering Program",
+    },
+    {
+      id: 3,
+      degree: "General Baccalaureate",
+      institution: "Gustave Eiffel",
+      duration: "2017-2020",
+      details: "Admission to a Highly Selective CPGE Program",
     },
   ];
   return (
