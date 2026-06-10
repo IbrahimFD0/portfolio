@@ -201,6 +201,28 @@ const appContent = {
         },
       },
     }),
+    aboutText: t({
+      en: {
+        title: ["About", "Me"],
+        desc: `Cybersecurity graduate and software developer with a strong interest
+            in network security, systems programming, and web technologies. I
+            enjoy building practical solutions, exploring how systems work at a
+            low level, and applying technical knowledge to solve real-world
+            challenges. My work spans cybersecurity research, full-stack
+            development, networking, and Linux-based environments.`,
+        competences: ["Spoken Languages", "Projects", "Years of Experience"],
+      },
+      fr: {
+        title: ["A", "Propos"],
+        desc: "Diplômé en cybersécurité et développeur logiciel, je m'intéresse particulièrement à la sécurité des réseaux, à la programmation système et aux technologies web. J'apprécie concevoir des solutions concrètes, comprendre le fonctionnement des systèmes à bas niveau et mettre mes compétences techniques au service de problématiques réelles. Mon expérience couvre la recherche en cybersécurité, le développement full-stack, les réseaux et les environnements Linux.",
+        competences: ["Langues Parlées", "Projets", "Années d'Expérience"],
+      },
+      es: {
+        title: ["Sobre", "Mí"],
+        desc: "Graduado en ciberseguridad y desarrollador de software, tengo un gran interés por la seguridad de redes, la programación de sistemas y las tecnologías web. Disfruto creando soluciones prácticas, comprendiendo el funcionamiento interno de los sistemas y aplicando mis conocimientos técnicos para resolver problemas reales. Mi experiencia abarca la investigación en ciberseguridad, el desarrollo full-stack, las redes y los entornos basados en Linux.",
+        competences: ["Idiomas", "Proyectos", "Años de Experiencia"],
+      },
+    }),
   },
 } satisfies Dictionary;
 
