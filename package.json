@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@sankyu/react-circle-flags": "^1.6.7",
     "@tailwindcss/vite": "^4.3.0",
     "aos": "^2.3.4",
     "intlayer": "^8.12.4",
