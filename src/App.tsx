@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import { IntlayerProvider } from "react-intlayer";
 
 const App = () => {
   useEffect(() => {
@@ -21,15 +22,17 @@ const App = () => {
   }, []);
   return (
     <div className="bg-[#171717] min-h-screen">
-      <Header />
-      <HeroSection />
-      <Education />
-      {/* <Certificates /> */}
-      <Experience />
-      <AboutSection />
-      <Projects />
-      <ContactSection />
-      <Footer />
+      <IntlayerProvider>
+        <Header />
+        <HeroSection />
+        <Education />
+        {/* <Certificates /> */}
+        <Experience />
+        <AboutSection />
+        <Projects />
+        <ContactSection />
+        <Footer />
+      </IntlayerProvider>
     </div>
   );
 };
