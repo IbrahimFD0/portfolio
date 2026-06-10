@@ -151,6 +151,56 @@ const appContent = {
         },
       },
     }),
+    experienceText: t({
+      en: {
+        skillsTitle: ["Technical", "Skills"],
+        jobsTitle: ["Work", "Experience"],
+        1: {
+          id: 1,
+          role: "Software Engineer",
+          company: "GE Healthcare",
+          date: "Jul 2025 - Dec 2025",
+        },
+        2: {
+          id: 2,
+          role: "FullStack Developer",
+          company: "Kwyk",
+          date: "Jun 2023 - Jul 2025",
+        },
+      },
+      fr: {
+        skillsTitle: ["Compétences", "Techniques"],
+        jobsTitle: ["Expérience", "Professionnelle"],
+        1: {
+          id: 1,
+          role: "Développeur Logiciel",
+          company: "GE Healthcare",
+          date: "Jul 2025 - Dec 2025",
+        },
+        2: {
+          id: 2,
+          role: "Développeur FullStack",
+          company: "Kwyk",
+          date: "Jun 2023 - Jul 2025",
+        },
+      },
+      es: {
+        skillsTitle: ["Competencias", "Técnicas"],
+        jobsTitle: ["Experiencia", "Laboral"],
+        1: {
+          id: 1,
+          role: "Desarrollador de Software",
+          company: "GE Healthcare",
+          date: "Jul 2025 - Dec 2025",
+        },
+        2: {
+          id: 2,
+          role: "Desarrollador FullStack",
+          company: "Kwyk",
+          date: "Jun 2023 - Jul 2025",
+        },
+      },
+    }),
   },
 } satisfies Dictionary;
 
