@@ -1,7 +1,9 @@
 import { FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
+import { useIntlayer } from "react-intlayer";
 
 const ContactSection = () => {
+  const content = useIntlayer("app");
   const contactInfo = [
     {
       id: 1,
@@ -30,7 +32,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2">
-            Let's Connect.
+            {content.contactText.title}
           </h2>
           <div
             className="w-28 h-1 bg-primary mx-auto mt-2
@@ -40,9 +42,7 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              Whether you have an opportunity, a project idea, or simply want to
-              connect, I'd love to hear from you. Feel free to get in touch, and
-              I'll get back to you as soon as possible.
+              {content.contactText.text}
             </p>
             <div className="space-y-6">
               {contactInfo.map((info) => {

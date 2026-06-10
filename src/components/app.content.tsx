@@ -282,6 +282,25 @@ const appContent = {
         },
       },
     }),
+    contactText: t({
+      en: {
+        title: "Let's Connect.",
+        text: "Whether you have an opportunity, a project idea, or simply want to connect, I'd love to hear from you. Feel free to get in touch, and I'll get back to you as soon as possible.",
+      },
+      fr: {
+        title: "Parlons.",
+        text: "Que vous ayez une opportunité, une idée de projet ou que vous souhaitiez simplement entrer en contact, je serais ravi d'échanger avec vous. N'hésitez pas à me contacter et je vous répondrai dans les plus brefs délais.",
+      },
+      es: {
+        title: "Hablemos.",
+        text: "Ya sea que tenga una oportunidad, una idea de proyecto o simplemente desee ponerse en contacto, estaré encantado de hablar con usted. No dude en escribirme y le responderé lo antes posible.",
+      },
+    }),
+    footerText: t({
+      en: "All rigths reserved",
+      fr: "Tous droits réservés",
+      es: "Todos los derechos reservados",
+    }),
   },
 } satisfies Dictionary;
 
