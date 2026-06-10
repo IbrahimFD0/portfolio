@@ -1,39 +1,22 @@
+import { useIntlayer } from "react-intlayer";
 import educ from "../assets/education.png";
 import { Calendar, CheckCircle, GraduationCap } from "lucide-react";
 const Education = () => {
+  const content = useIntlayer("app");
   const educationData = [
-    {
-      id: 1,
-      degree: "Masters in Computer Science & CyberSecurity",
-      institution: "Cy Tech",
-      duration: "2022-2025",
-      details:
-        "Specialized in Cybersecurity, Networking, Software Engineering, and Information Systems",
-    },
-    {
-      id: 2,
-      degree: "Bachelors of Science",
-      institution: "Gustave Eiffel",
-      duration: "2020-2022",
-      details: "Selected for a Competitive Engineering Program",
-    },
-    {
-      id: 3,
-      degree: "General Baccalaureate",
-      institution: "Gustave Eiffel",
-      duration: "2017-2020",
-      details: "Admission to a Highly Selective CPGE Program",
-    },
+    content.educationText[1],
+    content.educationText[2],
+    content.educationText[3],
   ];
   return (
     <section className="text-white py-20 overflow-hidden" id="education">
       <div className="max-w-7xl mx-auto px-6 lg:px-16">
         <div className="mb-16">
           <p className="text-primary text-sm uppercase tracking-widest mb-2 font-semibold">
-            Learning Path
+            {content.educationText.path}
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white">
-            Education.
+            {content.educationText.title}.
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -107,7 +90,7 @@ const Education = () => {
                   uppercase-wider text-primary font-bold "
                 >
                   <CheckCircle size={12} />
-                  Academic Excellence
+                  {edu.remark}
                 </div>
               </div>
             ))}

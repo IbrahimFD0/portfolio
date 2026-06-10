@@ -54,6 +54,103 @@ const appContent = {
         resume: "curriculo.pdf",
       },
     }),
+    educationText: t({
+      en: {
+        title: "Education",
+        path: "Learning Path",
+
+        1: {
+          id: 1,
+          degree: "Masters in Computer Science & Cybersecurity",
+          institution: "Cy Tech - Cergy",
+          duration: "2022-2025",
+          details:
+            "Specialized in Cybersecurity, Networking and Software Engineering",
+          remark: "Academic Excellence",
+        },
+        2: {
+          id: 2,
+          degree: "Bachelors of Science",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2020-2022",
+          details: "Selected for a competitive engineering program",
+          remark: "Academic Excellence",
+        },
+        3: {
+          id: 3,
+          degree: "General Baccalaureate",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2017-2020",
+          details: "Admission to a highliy selective CPGE program",
+          remark: "Academic Excellence",
+        },
+      },
+      fr: {
+        title: "Education",
+        path: "Parcours Scolaire",
+
+        1: {
+          id: 1,
+          degree: "Ingénieur Informatique",
+          institution: "Cy Tech - Cergy",
+          duration: "2022-2025",
+          details:
+            "Spécialisation en Cybersécurité, Réseaux et Développement Logiciel",
+          remark: "Excellence Académique",
+        },
+        2: {
+          id: 2,
+
+          degree: "Classe Préparatoire aux Grandes Écoles",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2020-2022",
+          remark: "Excellence Académique",
+          details: "Admission en Grande École d'Ingénieur",
+        },
+        3: {
+          id: 3,
+
+          degree: "Baccalauréat Général Scientifique",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2017-2020",
+          remark: "Excellence Académique",
+          details: "Admission en Classe Préparatoire aux Grandes Écoles",
+        },
+      },
+      es: {
+        title: "Formación",
+        path: "Trayectoria académica",
+
+        1: {
+          id: 1,
+
+          degree: "Ingeniería Informática",
+          institution: "CY Tech - Cergy",
+          duration: "2022-2025",
+          details:
+            "Especialización en Ciberseguridad, Redes y Desarrollo de Software",
+          remark: "Excelencia Académica",
+        },
+        2: {
+          id: 2,
+          title: "Education",
+          degree: "Programa Preparatorio para Grandes Escuelas",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2020-2022",
+          details: "Admisión a una Escuela Superior de Ingeniería",
+          remark: "Excelencia Académica",
+        },
+        3: {
+          id: 3,
+          degree: "Bachillerato General Científico",
+          institution: "Gustave Eiffel - Dijon",
+          duration: "2017-2020",
+          details:
+            "Admisión al Programa Preparatorio para Grandes Escuelas de Ingeniería",
+          remark: "Excelencia Académica",
+        },
+      },
+    }),
   },
 } satisfies Dictionary;
 
