@@ -223,6 +223,65 @@ const appContent = {
         competences: ["Idiomas", "Proyectos", "Años de Experiencia"],
       },
     }),
+    projectsText: t({
+      en: {
+        1: {
+          title: "Network Configuration and Security",
+          desc: "Designed and implemented a series of networking labs using Cisco Packet Tracer to develop practical experience in network administration, configuration, and security. The project involved configuring and troubleshooting Standard and Extended Access Control Lists (ACLs), Cisco Discovery Protocol (CDP), Dynamic Trunking Protocol (DTP), VLAN Trunking Protocol (VTP), Spanning Tree Protocol (STP), firewall rules, and site-to-site IPSec VPNs. Through these labs, I gained hands-on experience in network segmentation, traffic filtering, VLAN management, switch and router configuration, loop prevention, secure remote connectivity, and network troubleshooting, while applying industry-standard networking protocols and security practices in simulated enterprise environments.",
+        },
+        2: {
+          title: "Raspberry Homelab & Secure Remote Access Infrastructure",
+          desc: "Designed and deployed a Raspberry Pi-based homelab environment to host and manage self-hosted network services within a Linux infrastructure. Configured secure VPN connectivity to provide encrypted remote access to internal resources from external networks while maintaining strong security controls. Implemented network tunneling solutions to securely expose selected services to the Internet, reducing the public attack surface through controlled access mechanisms. Managed system administration tasks including network routing, firewall configuration, service deployment, and remote infrastructure management. This project provided practical experience in self-hosted infrastructure, VPN technologies, secure remote access architectures, Linux administration, and network security best practices.",
+        },
+        3: {
+          title: "Cy Path - Board Game",
+          desc: "Designed and developed a turn-based multiplayer board game in Java using JavaFX, supporting up to four players. The objective of the game is to strategically navigate a player's piece across the board and reach the opposite side before opponents. Players can either advance their position or place barriers to obstruct opponents' paths, creating a balance between offensive and defensive gameplay.",
+        },
+        4: {
+          title: "Faryssy Shop",
+          desc: "Faryssy Shop is a full-stack e-commerce web application developed using Jakarta EE, MySQL, Hibernate, and Apache Tomcat. The platform provides a complete online shopping experience, allowing users to create accounts, browse products, manage shopping carts, and place orders through a secure and intuitive interface. Stripe was integrated to handle online payments securely, while AJAX was used to improve responsiveness and deliver a smoother user experience without requiring full page reloads. The application follows a structured, object-oriented design and leverages Hibernate for efficient database interaction and persistence management. The user interface was built with Bootstrap to ensure a modern, responsive design across different devices and screen sizes. This project demonstrates skills in full-stack web development, database design, payment gateway integration, and the development of scalable, data-driven web applications using Java enterprise technologies.",
+        },
+      },
+      fr: {
+        1: {
+          title: "Configuration et Sécurisation des Réseaux",
+          desc: "Conception et mise en œuvre d’une série de laboratoires réseau à l’aide de Cisco Packet Tracer afin d’acquérir une expérience pratique en administration, configuration et sécurité des réseaux. Le projet comprenait la configuration et le dépannage des listes de contrôle d’accès (ACL) standard et étendues, du Cisco Discovery Protocol (CDP), du Dynamic Trunking Protocol (DTP), du VLAN Trunking Protocol (VTP), du Spanning Tree Protocol (STP), des règles de pare-feu ainsi que de VPN IPSec site à site. Ces travaux pratiques m’ont permis de développer des compétences en segmentation réseau, filtrage du trafic, gestion des VLAN, configuration de commutateurs et routeurs, prévention des boucles, connectivité sécurisée à distance et résolution de problèmes réseau, tout en appliquant des protocoles et des bonnes pratiques de sécurité utilisés dans les environnements d’entreprise.",
+        },
+        2: {
+          title:
+            "Homelab Raspberry Pi et Infrastructure d’Accès Distant Sécurisé",
+          desc: "Conception et déploiement d’un environnement homelab basé sur Raspberry Pi afin d’héberger et d’administrer des services réseau auto-hébergés au sein d’une infrastructure Linux. Mise en place d’une connectivité VPN sécurisée permettant un accès distant chiffré aux ressources internes depuis Internet tout en garantissant un haut niveau de sécurité. Déploiement de solutions de tunneling réseau pour exposer certains services de manière contrôlée et réduire la surface d’attaque publique. Administration de l’infrastructure Linux, incluant le routage réseau, la configuration du pare-feu, le déploiement de services et la gestion à distance. Ce projet m’a permis d’acquérir une expérience concrète des infrastructures auto-hébergées, des technologies VPN, des architectures d’accès distant sécurisé, de l’administration Linux et des bonnes pratiques de cybersécurité.",
+        },
+        3: {
+          title: "Cy Path - Jeu de Plateau",
+          desc: "Conception et développement d’un jeu de plateau multijoueur au tour par tour en Java avec JavaFX, prenant en charge jusqu’à quatre joueurs. L’objectif est de guider stratégiquement son pion jusqu’au côté opposé du plateau avant ses adversaires. Les joueurs peuvent soit avancer leur position, soit placer des barrières pour bloquer les déplacements adverses, créant ainsi un équilibre entre stratégies offensives et défensives.",
+        },
+        4: {
+          title: "Faryssy Shop",
+          desc: "Faryssy Shop est une application web e-commerce full-stack développée avec Jakarta EE, MySQL, Hibernate et Apache Tomcat. La plateforme offre une expérience d’achat complète permettant aux utilisateurs de créer un compte, parcourir les produits, gérer leur panier et passer commande via une interface intuitive et sécurisée. Stripe a été intégré afin de traiter les paiements en ligne de manière sécurisée, tandis qu’AJAX a été utilisé pour améliorer la réactivité de l’application et offrir une navigation fluide sans rechargement complet des pages. L’application repose sur une architecture orientée objet structurée et exploite Hibernate pour la gestion efficace de la persistance et des interactions avec la base de données. L’interface utilisateur a été conçue avec Bootstrap afin de garantir un design moderne et adaptatif sur différents appareils et tailles d’écran. Ce projet met en avant des compétences en développement web full-stack, conception de bases de données, intégration de solutions de paiement et développement d’applications web évolutives basées sur les technologies Java d’entreprise.",
+        },
+      },
+
+      es: {
+        1: {
+          title: "Configuración y Seguridad de Redes",
+          desc: "Diseñé e implementé una serie de laboratorios de redes utilizando Cisco Packet Tracer para adquirir experiencia práctica en administración, configuración y seguridad de redes. El proyecto incluyó la configuración y resolución de problemas de listas de control de acceso (ACL) estándar y extendidas, Cisco Discovery Protocol (CDP), Dynamic Trunking Protocol (DTP), VLAN Trunking Protocol (VTP), Spanning Tree Protocol (STP), reglas de firewall y VPN IPSec sitio a sitio. Estos laboratorios me permitieron desarrollar experiencia en segmentación de redes, filtrado de tráfico, gestión de VLAN, configuración de switches y routers, prevención de bucles, conectividad remota segura y diagnóstico de incidencias, aplicando protocolos y prácticas de seguridad ampliamente utilizados en entornos empresariales.",
+        },
+        2: {
+          title:
+            "Homelab con Raspberry Pi e Infraestructura de Acceso Remoto Seguro",
+          desc: "Diseñé e implementé un entorno homelab basado en Raspberry Pi para alojar y administrar servicios de red autoalojados dentro de una infraestructura Linux. Configuré una conexión VPN segura para proporcionar acceso remoto cifrado a recursos internos desde redes externas, manteniendo altos estándares de seguridad. También implementé soluciones de túneles de red para exponer determinados servicios a Internet de forma controlada y reducir la superficie de ataque pública. Administré tareas de infraestructura como el enrutamiento de red, la configuración de firewalls, el despliegue de servicios y la gestión remota de sistemas. Este proyecto me permitió adquirir experiencia práctica en infraestructuras autoalojadas, tecnologías VPN, arquitecturas de acceso remoto seguro, administración de Linux y buenas prácticas de seguridad informática.",
+        },
+        3: {
+          title: "Cy Path - Juego de Mesa",
+          desc: "Diseñé y desarrollé un juego de mesa multijugador por turnos en Java utilizando JavaFX, con soporte para hasta cuatro jugadores. El objetivo es guiar estratégicamente una ficha hasta el lado opuesto del tablero antes que los demás participantes. Los jugadores pueden avanzar su posición o colocar barreras para bloquear el progreso de sus oponentes, creando un equilibrio entre estrategias ofensivas y defensivas.",
+        },
+        4: {
+          title: "Faryssy Shop",
+          desc: "Faryssy Shop es una aplicación web de comercio electrónico full-stack desarrollada con Jakarta EE, MySQL, Hibernate y Apache Tomcat. La plataforma ofrece una experiencia de compra completa, permitiendo a los usuarios crear cuentas, explorar productos, gestionar carritos de compra y realizar pedidos a través de una interfaz intuitiva y segura. Stripe se integró para procesar pagos en línea de forma segura, mientras que AJAX se utilizó para mejorar la capacidad de respuesta de la aplicación y proporcionar una experiencia de usuario más fluida sin necesidad de recargar páginas completas. La aplicación sigue un diseño estructurado y orientado a objetos, aprovechando Hibernate para gestionar de manera eficiente la persistencia y las interacciones con la base de datos. La interfaz fue desarrollada con Bootstrap para garantizar un diseño moderno y adaptable a diferentes dispositivos y tamaños de pantalla. Este proyecto demuestra competencias en desarrollo web full-stack, diseño de bases de datos, integración de pasarelas de pago y creación de aplicaciones web escalables basadas en tecnologías empresariales de Java.",
+        },
+      },
+    }),
   },
 } satisfies Dictionary;
 
