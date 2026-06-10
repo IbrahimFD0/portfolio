@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import { useIntlayer } from "react-intlayer";
 interface IMenu {
   name: string;
   href: string;
 }
 const Header = () => {
+  const content = useIntlayer("app");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems: Array<IMenu> = [
-    { name: "Education", href: "#education" },
-    { name: "Experience", href: "#skills" },
-    { name: "About Me", href: "#about" },
-    { name: "Projects", href: "#projects" },
+    { name: content.headerText.eduction, href: "#education" },
+    { name: content.headerText.experience, href: "#skills" },
+    { name: content.headerText.about, href: "#about" },
+    { name: content.headerText.projects, href: "#projects" },
   ];
   const scrollToSection = (href: string) => {
     setIsMenuOpen(false);
@@ -44,7 +45,7 @@ const Header = () => {
             onClick={() => scrollToSection("#contact")}
             className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all"
           >
-            Contact Me
+            {content.headerText.contact}
           </button>
         </nav>
         {/* Mobile Menu */}
@@ -91,7 +92,7 @@ const Header = () => {
               onClick={() => scrollToSection("#contact")}
               className="w-full bg-primary text-white py-4 rounded-xl text-lg font-bold"
             >
-              Contact Me
+              {content.headerText.contact}
             </button>
           </li>
         </ul>
