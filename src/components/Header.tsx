@@ -29,6 +29,7 @@ const Header = () => {
         {/* Logo */}
         <div className="text-white text-3xl font-black cursor-pointer">
           Portfolio<span className="text-primary">.</span>
+          {/* {content} */}
         </div>
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-10">

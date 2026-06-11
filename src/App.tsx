@@ -21,8 +21,8 @@ const App = () => {
     });
   }, []);
   return (
-    <div className="bg-[#171717] min-h-screen">
-      <IntlayerProvider>
+    <IntlayerProvider>
+      <div className="bg-[#171717] min-h-screen">
         <Header />
         <HeroSection />
         <Education />
@@ -32,8 +32,8 @@ const App = () => {
         <Projects />
         <ContactSection />
         <Footer />
-      </IntlayerProvider>
-    </div>
+      </div>
+    </IntlayerProvider>
   );
 };
 
