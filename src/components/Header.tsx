@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { useIntlayer } from "react-intlayer";
+import { ChevronDown, Languages, Menu, X } from "lucide-react";
+import { useIntlayer, useLocale } from "react-intlayer";
+import { Locales } from "intlayer";
+import { FlagEs, FlagFr, FlagUs } from "@sankyu/react-circle-flags";
 interface IMenu {
   name: string;
   href: string;
 }
 const Header = () => {
   const content = useIntlayer("app");
+  const { setLocale } = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems: Array<IMenu> = [
     { name: content.headerText.eduction, href: "#education" },
@@ -43,10 +46,37 @@ const Header = () => {
           </ul>
           <button
             onClick={() => scrollToSection("#contact")}
-            className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all"
+            className="bg-primary hover:bg-purple-700/90 text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all"
           >
             {content.headerText.contact}
           </button>
+          <div className=" block group text-white">
+            <Languages className="text-white p-0 m-0 " />
+            <ChevronDown className="text-white p-0" />
+            <div className="absolute group-hover:block hover:cursor-pointer">
+              <div
+                className="items-center hidden group-hover:flex pb-2 -translate-x-10"
+                onClick={() => setLocale(Locales.ENGLISH)}
+              >
+                <FlagUs />
+                <p className="hidden group-hover:flex px-3">English</p>
+              </div>
+              <div
+                onClick={() => setLocale(Locales.FRENCH)}
+                className="items-center hidden group-hover:flex pb-2 -translate-x-10"
+              >
+                <FlagFr />
+                <p className="hidden group-hover:flex pb-2 px-3">French</p>
+              </div>
+              <div
+                className="items-center  hidden group-hover:flex pb-2 -translate-x-10"
+                onClick={() => setLocale(Locales.SPANISH)}
+              >
+                <FlagEs />
+                <p className="hidden group-hover:block px-3">Spanish</p>
+              </div>
+            </div>
+          </div>
         </nav>
         {/* Mobile Menu */}
         <button
@@ -65,7 +95,7 @@ const Header = () => {
       )}
       <div
         className={`fixed top-0 right-0 h-full w-80
-            bg-[#111827] z-50 transition-transform duration-300 md:hidden
+            bg-[#23112e] z-50 transition-transform duration-300 md:hidden
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             p-8 flex flex-col`}
       >
@@ -94,6 +124,27 @@ const Header = () => {
             >
               {content.headerText.contact}
             </button>
+          </li>
+          <li>
+            <div className="flex flex-row items-center justify-around pt-5">
+              <FlagUs
+                width={48}
+                height={48}
+                onClick={() => {
+                  setLocale(Locales.ENGLISH);
+                }}
+              />
+              <FlagFr
+                width={48}
+                height={48}
+                onClick={() => setLocale(Locales.FRENCH)}
+              />
+              <FlagEs
+                width={48}
+                height={48}
+                onClick={() => setLocale(Locales.SPANISH)}
+              />
+            </div>
           </li>
         </ul>
       </div>
