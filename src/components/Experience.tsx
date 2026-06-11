@@ -8,7 +8,9 @@ import {
   Layout,
   Terminal,
 } from "lucide-react";
+import { useIntlayer } from "react-intlayer";
 const Experience = () => {
+  const content = useIntlayer("app");
   const Skills = [
     {
       id: 1,
@@ -41,20 +43,7 @@ const Experience = () => {
       icon: Layers,
     },
   ];
-  const Experiences = [
-    {
-      id: 1,
-      role: "Software Engineer",
-      company: "GE Healthcare",
-      date: "Jul 2025 - Dec 2025",
-    },
-    {
-      id: 1,
-      role: "FullStack Developer",
-      company: "Kwyk",
-      date: "Jun 2023 - Jul 2025",
-    },
-  ];
+  const Experiences = [content.experienceText[1], content.experienceText[2]];
   return (
     <section className="text-white py-20 relative overflow-hidden" id="skills">
       <div className="max-w-7xl mx-auto px-6 lg:px-16 relative z-10 ">
@@ -64,7 +53,11 @@ const Experience = () => {
               className="text-4xl md:text-5xl font-extrabold
             mb-12 "
             >
-              Technical <span className="text-primary">Skills</span>.
+              {content.experienceText.skillsTitle[0]}{" "}
+              <span className="text-primary">
+                {content.experienceText.skillsTitle[1]}
+              </span>
+              .
             </h2>
             <div className="space-y-8 ">
               {Skills.map((skill) => {
@@ -107,7 +100,11 @@ const Experience = () => {
               className="text-4xl md-text-5xl font-extrabold
             mb-12 "
             >
-              Work <span className="text-primary">Experience</span>.
+              {content.experienceText.jobsTitle[0]}{" "}
+              <span className="text-primary">
+                {content.experienceText.jobsTitle[1]}
+              </span>
+              .
             </h2>
             <div className="space-y-6">
               {Experiences.map((exp) => (

@@ -1,5 +1,7 @@
+import { useIntlayer } from "react-intlayer";
 import about from "../assets/about.png";
 const AboutSection = () => {
+  const content = useIntlayer("app");
   return (
     <section className="text-white mt-20 relative overflow-hidden" id="about">
       <div
@@ -8,15 +10,11 @@ const AboutSection = () => {
       >
         <div data-aos="fade-rigth">
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
-            More <span className="text-primary">About</span> Me.
+            {content.aboutText.title[0]}{" "}
+            <span className="text-primary">{content.aboutText.title[1]}</span>.
           </h2>
           <p className="text-gray-400 text-base lg:text-lg mb-10 leading-relaxed">
-            Cybersecurity graduate and software developer with a strong interest
-            in network security, systems programming, and web technologies. I
-            enjoy building practical solutions, exploring how systems work at a
-            low level, and applying technical knowledge to solve real-world
-            challenges. My work spans cybersecurity research, full-stack
-            development, networking, and Linux-based environments.
+            {content.aboutText.desc}
           </p>
           <div className="grid grid-cols-3 gap-6 max-w-xl">
             <div
@@ -33,7 +31,7 @@ const AboutSection = () => {
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
               "
               >
-                Spoken Languages
+                {content.aboutText.competences[0]}
               </p>
             </div>{" "}
             <div
@@ -50,7 +48,7 @@ const AboutSection = () => {
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
               "
               >
-                Projects
+                {content.aboutText.competences[1]}
               </p>
             </div>{" "}
             <div
@@ -67,7 +65,7 @@ const AboutSection = () => {
                 className="text-xs text-gray-400 uppercase tracking-wider mt-0.5
               "
               >
-                Years of Experience
+                {content.aboutText.competences[2]}
               </p>
             </div>
           </div>

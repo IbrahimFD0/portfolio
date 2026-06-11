@@ -1,4 +1,7 @@
+import { useIntlayer } from "react-intlayer";
+
 const Footer = () => {
+  const content = useIntlayer("app");
   return (
     <footer
       className="mt-8 border z-10 border-t-[#33353F]
@@ -9,7 +12,7 @@ const Footer = () => {
           PORTFOLIO<span className="text-primary">.</span>
         </div>
         <p className="text-slate-600 text-sm md:text-base">
-          All rigths reserved.
+          {content.footerText.value}
         </p>
       </div>
     </footer>

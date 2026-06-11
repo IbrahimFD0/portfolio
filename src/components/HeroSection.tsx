@@ -1,7 +1,9 @@
 import { Download } from "lucide-react";
 import hero from "../assets/hero.png";
+import { useIntlayer } from "react-intlayer";
 
 const HeroSection = () => {
+  const content = useIntlayer("app");
   return (
     <section className="relative w-full" data-aos="zoom-in-up">
       <div className="absolute top-0 inset-x-0 h-64 flex items-start">
@@ -29,7 +31,7 @@ const HeroSection = () => {
             text-4xl md:text-5xl lg:text-6xl
             "
               >
-                Hi, I'm{" "}
+                {content.heroText.greet}
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-200">
                   {" "}
                   Ibrahim
@@ -38,12 +40,7 @@ const HeroSection = () => {
               </h1>
             </div>
             <p className="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl">
-              Cybersecurity graduate and software developer passionate about
-              building secure, reliable, and impactful solutions. With
-              experience spanning cybersecurity, networking, systems
-              programming, and full-stack development, I enjoy tackling complex
-              technical challenges and turning ideas into practical
-              applications.
+              {content.heroText.desc}
             </p>
             <div className="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max lg:mx-0">
               <button className="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
@@ -52,7 +49,7 @@ const HeroSection = () => {
               origin-center transition-all ease-in-out bg-primary border-2 border-transparent"
                 ></span>
                 <span className="relative flex items-center justify-center text-white">
-                  Hire Me
+                  {content.heroText.hire}
                 </span>
               </button>
               <button className="border border-purple-700 px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
@@ -62,11 +59,11 @@ const HeroSection = () => {
                     <div className="download-loader text-white hidden"></div>
                   </div>
                   <a
-                    href="/resume.pdf"
-                    download="resume.pdf"
+                    href={"/" + content.heroText.resume}
+                    download={content.heroText.resume}
                     className="pl-2 text-primary"
                   >
-                    Download resume
+                    {content.heroText.download}
                   </a>
                 </div>
               </button>

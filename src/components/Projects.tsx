@@ -2,42 +2,43 @@ import network from "../assets/network-project.png";
 import homelab from "../assets/homelab.png";
 import farysshop from "../assets/faryssyshop.png";
 import cypath from "../assets/cypath.png";
+import { useIntlayer } from "react-intlayer";
 const Projects = () => {
+  const content = useIntlayer("app");
   const projects = [
     {
       id: 2,
       image: homelab,
-      title: "Raspberry Homelab & Secure Remote Access Infrastructure",
-      desc: "Designed and developed a turn-based multiplayer board game in Java using JavaFX, supporting up to four players. The objective of the game is to strategically navigate a player's piece across the board and reach the opposite side before opponents. Players can either advance their position or place barriers to obstruct opponents' paths, creating a balance between offensive and defensive gameplay.",
+      title: content.projectsText[2].title,
+      desc: content.projectsText[2].desc,
       tech: ["Raspberry", "n8n", "Docker", "Nginx", "Cloudflare"],
     },
     {
       id: 1,
       image: network,
-      title: "Network Configuration and Security",
-      desc: "Designed and implemented a series of networking labs using Cisco Packet Tracer to develop practical experience in network administration, configuration, and security. The project involved configuring and troubleshooting Standard and Extended Access Control Lists (ACLs), Cisco Discovery Protocol (CDP), Dynamic Trunking Protocol (DTP), VLAN Trunking Protocol (VTP), Spanning Tree Protocol (STP), firewall rules, and site-to-site IPSec VPNs. Through these labs, I gained hands-on experience in network segmentation, traffic filtering, VLAN management, switch and router configuration, loop prevention, secure remote connectivity, and network troubleshooting, while applying industry-standard networking protocols and security practices in simulated enterprise environments.",
+      title: content.projectsText[1].title,
+      desc: content.projectsText[1].desc,
       tech: [
-        "Packet Tracer",
-        " Standard & Extended ACLs",
+        "ACLs",
         // "CDP DTP VTP",
         "STP",
-        " Firewall",
-        " IPSec VPN",
-        " VLANs",
+        "Firewall",
+        "IPSec VPN",
+        "VLANs",
       ],
     },
     {
       id: 3,
       image: cypath,
-      title: "Cy Path - Board Game",
-      desc: "Designed and developed a turn-based multiplayer board game in Java using JavaFX, supporting up to four players. The objective of the game is to strategically navigate a player's piece across the board and reach the opposite side before opponents. Players can either advance their position or place barriers to obstruct opponents' paths, creating a balance between offensive and defensive gameplay.",
+      title: content.projectsText[3].title,
+      desc: content.projectsText[3].desc,
       tech: ["Java", "HTML", "CSS", "JavaScript", "GitHub"],
     },
     {
       id: 4,
       image: farysshop,
-      title: "Faryssy Shop",
-      desc: "Faryssy Shop is a full-stack e-commerce web application developed using Jakarta EE, MySQL, Hibernate, and Apache Tomcat. The platform provides a complete online shopping experience, allowing users to create accounts, browse products, manage shopping carts, and place orders through a secure and intuitive interface. Stripe was integrated to handle online payments securely, while AJAX was used to improve responsiveness and deliver a smoother user experience without requiring full page reloads. The application follows a structured, object-oriented design and leverages Hibernate for efficient database interaction and persistence management. The user interface was built with Bootstrap to ensure a modern, responsive design across different devices and screen sizes. This project demonstrates skills in full-stack web development, database design, payment gateway integration, and the development of scalable, data-driven web applications using Java enterprise technologies.",
+      title: content.projectsText[4].title,
+      desc: content.projectsText[4].desc,
       tech: [
         "Jakarta EE",
         "MySQL",
