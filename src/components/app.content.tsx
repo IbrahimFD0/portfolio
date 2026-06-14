@@ -28,7 +28,7 @@ const appContent = {
     }),
     heroText: t({
       en: {
-        greet: "Him I'm",
+        greet: "Hi I'm",
         desc: `Cybersecurity graduate and software developer passionate about
               building secure, reliable, and impactful solutions. With
               experience spanning cybersecurity, networking, systems
