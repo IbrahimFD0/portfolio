@@ -18,7 +18,7 @@ const AboutSection = () => {
           </p>
           <div className="grid grid-cols-3 gap-6 max-w-xl">
             <div
-              className="text-center rounded-2xl bg-[#23112e] border border-[#2f1641] p-5 
+              className="text-center rounded-2xl bg-cardbg border border-[#2f1641] p-5 
                 transition-all duration-300 hover:border-primary/50"
             >
               <h3
@@ -35,7 +35,7 @@ const AboutSection = () => {
               </p>
             </div>{" "}
             <div
-              className="text-center rounded-2xl bg-[#23112e] border border-[#2f1641] p-5 
+              className="text-center rounded-2xl bg-cardbg border border-[#2f1641] p-5 
                 transition-all duration-300 hover:border-primary/50"
             >
               <h3
@@ -52,7 +52,7 @@ const AboutSection = () => {
               </p>
             </div>{" "}
             <div
-              className="text-center rounded-2xl bg-[#23112e] border border-[#2f1641] p-5 
+              className="text-center rounded-2xl bg-cardbg border border-[#2f1641] p-5 
                 transition-all duration-300 hover:border-primary/50"
             >
               <h3
@@ -76,7 +76,7 @@ const AboutSection = () => {
         >
           <div className="relative w-64 h-64 md:w-96 md:h-120">
             <div className="absolute inset-0 z-0 rounded-full shadow-lg border border-purple-700 translate-x-4 translate-y-4"></div>
-            <div className="relative z-10 w-full h-full  bg-[#23112e] rounded-full overflow-hidden border border-[#2f1641]">
+            <div className="relative z-10 w-full h-full  bg-cardbg rounded-full overflow-hidden border border-[#2f1641]">
               <img
                 src={about}
                 alt="About"

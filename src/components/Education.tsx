@@ -32,8 +32,8 @@ const Education = () => {
                 rounded-2xl shadow-lg border border-purple-700"
               ></div>
               <div
-                className="relative z-10 bg-[#23112e]
-            rounded-2xl overflow-hidden border border-[#2f1641]"
+                className="relative z-10 
+            rounded-2xl overflow-hidden border border-(--cardbg)"
               >
                 <img
                   src={educ}
@@ -45,7 +45,7 @@ const Education = () => {
               </div>
               <div
                 className="absolute -top-4 -left-4
-            bg-primary/20 w-16 h-16 rounded-full blur-2xl"
+            bg-(--primary)/40 w-16 h-16 rounded-full blur-2xl"
               ></div>
             </div>
           </div>
@@ -53,13 +53,13 @@ const Education = () => {
             {educationData.map((edu) => (
               <div
                 key={edu.id}
-                className="group relative p-6 rounded-2xl bg-[#23112e] border border-[#2f1641]
-                transition-all duration-300 hover:border-primary/50"
+                className="group relative p-6 rounded-2xl bg-cardbg border border-[#2f1641]
+                transition-all duration-300 hover:border-(--primary)/50"
               >
                 <div className="flex flex-col sm:flex-row sm-items-center justify-between gap-4 mb-4">
                   <div className="flex items-center gap-3">
                     <div
-                      className="p-2 bg-[#050816] rounded-lg border border-primary/20
+                      className="p-2 bg-(--black) rounded-lg border border-(--primary)/20
                     group-hover:border-primary transition-colors"
                     >
                       <GraduationCap className="text-primary" size={24} />
@@ -72,7 +72,7 @@ const Education = () => {
                     </div>
                   </div>
                   <div
-                    className="flex items-center gap-2 text-xs font-medium bg-[#050816]
+                    className="flex items-center gap-2 text-xs font-medium bg-(--black)
                 px-3 py-1 rounded-full border border-gray-700 w-fit "
                   >
                     <Calendar size={12} className="text-primary" />

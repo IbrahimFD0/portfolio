@@ -3,6 +3,9 @@
 @layer base {
   :root {
     --primary: #8F00FF;
+    --darkbg:#171717;
+    --cardbg: #23112e;
+    --black: #130516;
   }
 
 }
@@ -11,6 +14,10 @@
   .bg-primary {
     background-color: var(--primary);
   }
+  .bg-darkbg {
+    background-color: var(--darkbg);
+  }
+  .bg-cardbg{background-color: var(--cardbg);}
 
   .text-primary {
     color: var(--primary);
@@ -27,4 +34,7 @@
   .via-primary {
     --tw-gradient-via: var(--primary);
   }
+}
+body{
+  background-color: var(--darkbg);
 }

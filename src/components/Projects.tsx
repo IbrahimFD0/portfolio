@@ -57,7 +57,7 @@ const Projects = () => {
             Projects
           </h2>
           <div
-            className="w-28 h-1 bg-primary mx-auto mt-2
+            className="w-28 h-1 bg-(--primary) mx-auto mt-2
           rounded-2xl"
           ></div>
         </div>
@@ -68,7 +68,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-[#23112e] rounded-lg overflow-hidden
+              className="bg-cardbg rounded-lg overflow-hidden
                 shadow-sm hover:shadow-lg hover:scale-105
                 transition-all duration-300"
             >
@@ -91,7 +91,7 @@ const Projects = () => {
                     <span
                       key={idx}
                       className="text-xs font-bold px-2 py-0.5 bg-purple-700
-                        text-gray-300 rounded hover:bg-primary duration-300"
+                        text-gray-300 rounded hover:bg-(--primary) duration-300"
                     >
                       {tec}
                     </span>

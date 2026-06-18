@@ -47,7 +47,7 @@ const Header = () => {
           </ul>
           <button
             onClick={() => scrollToSection("#contact")}
-            className="bg-primary hover:bg-purple-700/90 text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all"
+            className="bg-(--primary) hover:bg-(--primary)/90 text-white px-6 py-2.5 rounded-lg text-base font-semibold transition-all"
           >
             {content.headerText.contact}
           </button>
@@ -96,7 +96,7 @@ const Header = () => {
       )}
       <div
         className={`fixed top-0 right-0 h-full w-80
-            bg-[#23112e] z-50 transition-transform duration-300 md:hidden
+            bg-cardbg z-50 transition-transform duration-300 md:hidden
             ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
             p-8 flex flex-col`}
       >
@@ -121,7 +121,7 @@ const Header = () => {
           <li className="pt-6">
             <button
               onClick={() => scrollToSection("#contact")}
-              className="w-full bg-primary text-white py-4 rounded-xl text-lg font-bold"
+              className="w-full bg-(--primary) text-white py-4 rounded-xl text-lg font-bold"
             >
               {content.headerText.contact}
             </button>

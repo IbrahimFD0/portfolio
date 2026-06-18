@@ -46,7 +46,7 @@ const HeroSection = () => {
               <button className="px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                 <span
                   className="absolute inset-0 rounded-3xl group-hover:scale-105
-              origin-center transition-all ease-in-out bg-primary border-2 border-transparent"
+              origin-center transition-all ease-in-out bg-(--primary) border-2 border-transparent"
                 ></span>
                 <span className="relative flex items-center justify-center text-white">
                   {content.heroText.hire}

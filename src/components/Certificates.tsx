@@ -44,12 +44,12 @@ const Certificates = () => {
               key={cert.id}
               data-aos="zoom-in"
               className="
-            group relative bg-[#23112e] border border-[#2f1641]
+            group relative bg-cardbg border border-[#2f1641]
             p-6 rounded-2xl transition-all-duration-300 hover:border-primary/50
             hover:shadow-[0_0_20px_-5px_rgba(196,0,255,0.2)]"
             >
               <div
-                className="absolute -top-4 -right-4 bg-primary p-3 rounded-xl
+                className="absolute -top-4 -right-4 bg-(--primary) p-3 rounded-xl
                 shadow-lg transform group-hover:rotate-12 transition-transform"
               >
                 <Award className="text-white" size={24} />

@@ -22,7 +22,7 @@ const App = () => {
   }, []);
   return (
     <IntlayerProvider>
-      <div className="bg-[#171717] min-h-screen">
+      <div className="bg-darkbg min-h-screen">
         <Header />
         <HeroSection />
         <Education />

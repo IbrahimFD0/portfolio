@@ -28,14 +28,14 @@ const ContactSection = () => {
     },
   ];
   return (
-    <section className="py-20 bg-[#171717]" id="contact">
+    <section className="py-20" id="contact">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2">
             {content.contactText.title}
           </h2>
           <div
-            className="w-28 h-1 bg-primary mx-auto mt-2
+            className="w-28 h-1 bg-(--primary) mx-auto mt-2
           rounded-2xl"
           ></div>
         </div>
@@ -50,9 +50,9 @@ const ContactSection = () => {
                 return (
                   <div key={info.id} className="flex items-center gap-4 group">
                     <div
-                      className="w-10 h-10 rounded-full bg-primary/10
+                      className="w-10 h-10 rounded-full bg-(--primary)/10
                     flex items-center justify-center
-                    group-hover:bg-primary/20 transition-colors"
+                    group-hover:bg-(--primary)/20 transition-colors"
                     >
                       <Icon size={18} className="text-primary" />
                     </div>

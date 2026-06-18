@@ -67,7 +67,7 @@ const Experience = () => {
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3 ">
                         <div
-                          className="p-2 bg-[#23112e] rounded-lg group-hover:bg-primary transition-colors
+                          className="p-2 bg-cardbg rounded-lg group-hover:bg-(--primary) transition-colors
                         duration-300"
                         >
                           <SkillIcon
@@ -83,7 +83,7 @@ const Experience = () => {
                         {skill.width}
                       </span>
                     </div>
-                    <div className="h-2 w-full bg-[#23112e] rounded-full p-0.5">
+                    <div className="h-2 w-full bg-cardbg rounded-full p-0.5">
                       <div
                         className="h-full rounded-full bg-linear-to-r from-primary to-purple-700
                         shadow-[0_0_10px_#c400ff]"
@@ -111,13 +111,14 @@ const Experience = () => {
                 <div
                   key={exp.id}
                   className="group relative p-6 rounded-2xl
-                  bg-[#23112e] hover:border-primary/50 transition-all duration-300
+                  bg-cardbg hover:border-primary/50 transition-all duration-300
                   "
                 >
                   <div className="flex gap-4">
                     <div className="shrink-0 mt-1 ">
+                      {/* TO-DO: CHANGE WHITE COLOR BELOW TO DARKER PURPLE */}
                       <div
-                        className="p-3 bg-[#23112e] rounded-xl border-gray-800
+                        className="p-3 bg-(--black) rounded-xl border-gray-800
                       group-hover:border-primary transition-colors"
                       >
                         <Briefcase className="text-primary" size={24} />
