@@ -37,7 +37,7 @@ const appContent = {
               applications.`,
         hire: "Available",
         download: "Download resume",
-        resume: "resume.pdf",
+        resume: "Resume-Faryssy.pdf",
       },
       fr: {
         greet: "Bonjour, je suis",
