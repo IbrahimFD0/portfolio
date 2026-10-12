@@ -22,8 +22,8 @@ const ContactSection = () => {
     {
       id: 3,
       icon: FaMapMarkedAlt,
-      title: "Location",
-      value: "Valencia, Spain",
+      title: "Localisation",
+      value: "Dijon, France",
       link: null,
     },
   ];

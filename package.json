@@ -16,12 +16,12 @@
     "@sankyu/react-circle-flags": "^1.6.7",
     "@tailwindcss/vite": "^4.3.0",
     "aos": "^2.3.4",
-    "intlayer": "^8.12.4",
+    "intlayer": "^9.7.0",
     "lucide-react": "^1.17.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-icons": "^5.6.0",
-    "react-intlayer": "^8.12.4",
+    "react-intlayer": "^9.7.0",
     "react-router": "^7.17.0",
     "tailwindcss": "^4.3.0"
   },
@@ -35,11 +35,17 @@
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "gh-pages": "^6.3.0",
+    "gh-pages": "^6.1.1",
     "globals": "^17.6.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12",
-    "vite-intlayer": "^8.12.4"
+    "vite-intlayer": "^9.7.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.24.2": true,
+    "esbuild@0.28.0": true,
+    "@parcel/watcher": true
   }
 }

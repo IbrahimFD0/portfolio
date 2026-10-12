@@ -44,7 +44,7 @@ const appContent = {
         desc: `Diplômé en cybersécurité et développeur logiciel, je suis passionné par la création de solutions sécurisées, performantes et utiles. Grâce à une expérience en cybersécurité, réseaux, programmation système et développement full-stack, j'aime relever des défis techniques complexes et donner vie à des projets concrets qui ont un réel impact.`,
         hire: "Disponible",
         download: "Télécharger CV",
-        resume: "cv.pdf",
+        resume: "CV-Faryssy.pdf",
       },
       es: {
         greet: "Hola, soy",
